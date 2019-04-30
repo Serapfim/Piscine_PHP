@@ -18,7 +18,7 @@ while ($read && !feof($read)){
   	if (feof(STDIN))
   	{
       fclose($read);
-  		echo "^D\n";
+      echo "^D\n";
       exit();
   	}
   	else
