@@ -13,16 +13,16 @@ while ($read && !feof($read)){
       echo "The number $line is odd\n";
     }
   }
-  else
-  {
-  	if (feof(STDIN))
-  	{
+  else {
+    if (feof(STDIN))
+    {
       fclose($read);
       echo "^D\n";
       exit();
-  	}
-  	else
-  		echo "'$line' is not a number\n";
+    }
+    else {
+      echo "'$line' is not a number\n";
+    }
   }
 }
 ?>
