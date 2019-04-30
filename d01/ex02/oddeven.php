@@ -17,8 +17,9 @@ while ($read && !feof($read)){
   {
   	if (feof(STDIN))
   	{
-  		echo "\n";
-  		exit();
+      fclose($read);
+  		echo "^D\n";
+      exit();
   	}
   	else
   		echo "'$line' is not a number\n";
