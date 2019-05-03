@@ -1,10 +1,10 @@
 <?php
 function ft_split($str)
 	{
-		$word = explode(" ", $str);
-		$sort_word = array_values(array_filter($word));
-		sort($sort_word);
-		return ($sort_word);
+		$Nevstr = explode(" ", $str);
+		$word = array_values(array_filter($Nevstr));
+		sort($word);
+		return ($word);
 	}
 	if ($argc > 1)
 	{
@@ -14,7 +14,7 @@ function ft_split($str)
 			$str = trim(preg_replace("/\s+/", " ", $argv[$i]));
 			$dell_space = ft_split($str);
 			for ($j = 0; $j < count($dell_space); $j++) {
-				$word = array_push($arr, $dell_space[$j]);
+				$Nevstr = array_push($arr, $dell_space[$j]);
 			}
 		}
 		sort($arr);
