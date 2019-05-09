@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  font-family: 'Heebo', sans-serif;
+}
+
+header{
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.cont{
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.cont a{
+  color: #fff;
+  font-size: 13px;
+}
+
+.cont a:last-child{
+  margin-left: 10px;
+}
+.soc{
+  display: inline-block;
+  margin-left: 60%;
+  margin-top: 5px;
+}
+.soc img{
+  width: 25px;
+  height: 25px;
+  padding:1px 0px;
+}
+
+.soc a{
+  padding: 1px 10px;
+}
+
+.soc a:hover{
+  border-bottom: 3px solid orange;
+}
+
+.logo {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.logo a{
+  font-family: 'Dancing Script', sans-serif;
+  color: #000;
+  font-size: 50px;
+}
+
+.nav{
+  margin-top: 45px;
+  margin-left: 53%;
+}
+
+.navmenu a{
+  color: #000;
+}
+
+.navmenu li{
+  float: left;
+  margin-left: 15px
+}
+
+.navmenu li:hover{
+  border-bottom: 3px solid orange;
+}
+
+.mainav{
+  display: flex;
+}
+
+.category_init{
+  display: inline-block;
+}
+.subcat{
+  display: block;
+}
+
+.mancon{
+  margin-left: 24%;
+}
+.mancon li{
+  display: inline-block;
+  padding-left: 20px;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+main .carousel {
+  padding-bottom: 20px;
+}
+main p {
+  text-align: center;
+}
+main h1 {
+  text-align: center;
+}
+
+.centered {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-form {
+  width: 60%;
+  margin: -20% auto 0;
+  text-align: center;
+}
+.auth-form .input-field {
+  width: 90%;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+.auth-form .action-button {
+  margin-top: 10px;
+}
+
+.action-button {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 200;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.51s;
+}
+.action-button:hover {
+  border-radius: 10px;
+  transition: all 0.51s;
+}
+
+.warn {
+  background-color: #000;
+}
+
+.accent {
+  background-color: #000;
+}
+
+
+.info {
+  font-weight: 100;
+  background-color: #000;
+}
+.info a{
+  color: #fff;
+}
