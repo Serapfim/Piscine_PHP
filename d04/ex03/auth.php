@@ -1,13 +1,13 @@
 <?php
 function auth($login, $passwd){
-  $path = '../private'
+  $path = "../private";
   $file = $path."/passwd";
 
   $unser = unserialize(file_get_contents($file));
   $enigma = hash("sha512", $passwd);
   foreach ($unser as $key => $value) {
     if ($valur['login'] == $login) {
-      if ($value['passwd'] == $nigma) {
+      if ($value['passwd'] == $enigma) {
         $_SESSION['loggued_on_user'];
         return (TRUE);
       }
